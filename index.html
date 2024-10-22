@@ -5,24 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background:hsl(212, 45%, 89%);
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+    }
+    .QR{
+      background: hsl(0, 0%, 100%);
+     position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 480px;
+      display: flex;
+      justify-content: fle;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 20px;
+      }
+      .QR__img{
+        width:260px; 
+        height: auto;
+        margin: 20px;
+        border-radius: 10px;
+      }
+      .QR__heading{
+      font-size: 22px;
+      line-height: 120%;
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+      width: 90%;
+    }
+    .QR__body{
+      font-size: 15px;
+      font-weight: 500;
+      color: hsl(216, 15%, 48%);
+      line-height: 140%;
+      letter-spacing: 0.2px;
+      width: 80%;
+      margin: 20px;
+    }
+
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="QR">
+    <img class="QR__img" src="./images/image-qr-code.png" alt="QR">
+    <!-- <figure class="QR__box">
+    </figure> -->
+    <h2 class="QR__heading">Improve your front-end skills by building projects</h2>
+    <p class="QR__body">Scan the Qr code to visit Frontend Mentor and your coding skills to the next level</p>
   </div>
 </body>
 </html>
